@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/acceuil.css">
+    <title>Accueil</title>
+</head>
+
+<body onload="play()">
+    
+      <video src="images/Moony .mp4" autoplay muted id="video"></video>
+      <div class="btn-group">
+        <button class="btn btn-danger" id="skip">Skip this video</button>
+        <button class="btn btn-warning" id="sound"><span class="glyphicon glyphicon-volume-up"></span></button>
+        <button class="btn btn-info" id="mute"><span class="glyphicon glyphicon-volume-off"></span></button>
+      </div>
+   
+    
+
+    <section id="content">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+            </div>
+            <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" class="col-lg-10 col-lg-offset-1"/></a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+             
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="https://www.ubereats.com/fr-CA/bordeaux/food-delivery/moony/XNerCitdQvG2BCslz8W9Qw/"><img src="images/uberEatsLogo.png" alt="Uber Eats" class="col-xs-2 col-lg-2" id="uberEats"></a></li>
+              </ul>
+              <ul class="nav navbar-nav" id="leftControls">
+                <li><a href="#" id="concept">Concept</a></li>
+                <li class="dropdown" id="plats">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plats<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Entrées</a></li>
+                    <li><a href="#">Plats</a></li>
+                    <li><a href="#">Desserts</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right" id="rightControls">
+                <li><a href="#">Nos engagements</a></li>
+                <li><a href="#">Nous trouver</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <script src="js/acceuil.js"></script>
+</body>
+
+</html>
+
+<!-- <iframe src="https://player.vimeo.com/video/135651630?autoplay=1&color=64fad2&title=0&byline=0&portrait=0" width="640" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/135651630">Moony</a> from <a href="https://vimeo.com/eyebeamvideos">eyebeam videos</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
