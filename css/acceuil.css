@@ -7,7 +7,7 @@ body {
 }
 
 .nav {
-    height: 250px;
+    height: 140px;
 }
 
 .navbar-brand {
@@ -33,6 +33,23 @@ body {
 
 #logo {
     margin-top: 0.5%;
+}
+
+
+#uberEats,
+#deliveroo,
+#foodora,
+#moonyTake,
+#facebook,
+#tripAdvisor,
+#instagram,
+#googlePlus {
+    height: 100px;
+    width: 110px;
+}
+
+#facebook {
+    margin-top: 30%;
 }
 
 #video {
@@ -91,6 +108,18 @@ body {
     padding: 2% 2% 2% 2%;
 }
 
+#homePanelImg1 {
+    margin-top: 7.5%;
+}
+
+#homePanelImg2 {
+    margin-top: 12%;
+}
+
+#homePanelImg3, #homePanelImg4 {
+    margin-top: 4%;
+}
+
 @media only screen and (max-width: 768px) {
     /* Styles pour smartphone */
     #logo {
@@ -122,17 +151,6 @@ body {
     }
     #engagements {
         margin-right: auto;
-    }
-    #uberEats,
-    #deliveroo,
-    #foodora,
-    #moonyTake,
-    #facebook,
-    #tripAdvisor,
-    #instagram,
-    #googlePlus {
-        height: 100px;
-        width: 110px;
     }
 }
 
