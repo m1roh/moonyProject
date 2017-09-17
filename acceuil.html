@@ -2,70 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/acceuil.css">
-    <title>Accueil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Tammudu|Berkshire+Swash|Courgette|IM+Fell+Great+Primer|Lobster+Two|Original+Surfer|Righteous"
+    rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/acceuil.css">
+  <title>Accueil</title>
 </head>
 
 <body onload="play()">
-    
-      <video src="images/Moony .mp4" autoplay muted id="video"></video>
-      <div class="btn-group">
-        <button class="btn btn-danger" id="skip">Skip this video</button>
-        <button class="btn btn-warning" id="sound"><span class="glyphicon glyphicon-volume-up"></span></button>
-        <button class="btn btn-info" id="mute"><span class="glyphicon glyphicon-volume-off"></span></button>
-      </div>
-   
-    
 
-    <section id="content">
-        <nav class="navbar navbar-inverse" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+  <video src="images/Moony .mp4" autoplay muted id="video"></video>
+  <div class="btn-group">
+    <button class="btn btn-danger" id="skip">Skip this video</button>
+    <button class="btn btn-warning" id="sound"><span class="glyphicon glyphicon-volume-up"></span></button>
+    <button class="btn btn-info" id="mute"><span class="glyphicon glyphicon-volume-off"></span></button>
+  </div>
+
+
+
+  <section id="content">
+    <nav class="navbar navbar-inverse navbar-top navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
-            </div>
-            <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" class="col-lg-10 col-lg-offset-1"/></a>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-             
-              <ul class="nav navbar-nav navbar-left">
-                <li><a href="https://www.ubereats.com/fr-CA/bordeaux/food-delivery/moony/XNerCitdQvG2BCslz8W9Qw/"><img src="images/uberEatsLogo.png" alt="Uber Eats" class="col-xs-2 col-lg-2" id="uberEats"></a></li>
-              </ul>
-              <ul class="nav navbar-nav" id="leftControls">
-                <li><a href="#" id="concept">Concept</a></li>
-                <li class="dropdown" id="plats">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plats<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Entrées</a></li>
-                    <li><a href="#">Plats</a></li>
-                    <li><a href="#">Desserts</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right" id="rightControls">
-                <li><a href="#">Nos engagements</a></li>
-                <li><a href="#">Nous trouver</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-    <script src="js/acceuil.js"></script>
+      </div>
+      <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" class="col-lg-10 col-lg-offset-1"/></a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="https://www.ubereats.com/fr-CA/bordeaux/food-delivery/moony/XNerCitdQvG2BCslz8W9Qw/"><img src="images/uberEatsLogo.png" alt="Uber Eats" class="col-xs-2 col-lg-2" id="uberEats"></a></li>
+          <li><a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-saint-genes-victoire/moony"><img src="images/deliveroo.png" alt="Deliveroo" class="col-xs-2 col-lg-2" id="deliveroo"></a></li>
+          <li><a href="https://www.foodora.fr/restaurant/s7ub/moony"><img src="images/foodora.png" alt="Foodora" class="col-xs-2 col-lg-2" id="foodora"></a></li>
+          <li><a href="#"><img src="images/moonyTake.png" alt="Moony Take Away" class="col-xs-2 col-lg-2" id="moonyTake"></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.ubereats.com/fr-CA/bordeaux/food-delivery/moony/XNerCitdQvG2BCslz8W9Qw/"><img src="images/facebook.png" alt="Facebook" class="col-xs-2 col-lg-2" id="facebook"></a></li>
+          <li><a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-saint-genes-victoire/moony"><img src="images/tripAdvisor.png" alt="Trip Advisor" class="col-xs-2 col-lg-2" id="tripAdvisor"></a></li>
+          <li><a href="https://www.foodora.fr/restaurant/s7ub/moony"><img src="images/insta.png" alt="Instagram" class="col-xs-2 col-lg-2" id="instagram"></a></li>
+          <li><a href="#"><img src="images/googlePlus.png" alt="Google +" class="col-xs-2 col-lg-2" id="googlePlus"></a></li>
+        </ul>
+        <ul class="nav navbar-nav" id="leftControls">
+          <li><a href="#" id="concept">Concept</a></li>
+          <li class="dropdown" id="plats">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plats<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Entrées</a></li>
+              <li><a href="#">Plats</a></li>
+              <li><a href="#">Desserts</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="rightControls">
+          <li id="engagements"><a href="#">Nos engagements</a></li>
+          <li><a href="#">Nous trouver</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="col-xs-10 col-xs-offset-1" id="panel">
+      <div id="panelHeading" class="text-center">
+        <h2 id="panelH2">Notre Concept</h2>
+      </div>
+      <div class="text-justify row" id="panelBody">
+        <div class="col-md-10" id="firstP">
+          <p class="col-md-8 panelText">Moony c'est l'aventure de 2 gourmands: un frère passionné depuis toujours par la cuisine de son sud-ouest natal...
+            et une soeur qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays. En alliant leurs expériences
+            culinaires et internationales ils donnent naissance à un concept unique.
+          </p>
+          <img src="images/moony.jpg" alt="Le Restaurant et l'équipe" class="thumbnail col-md-4">
+        </div>
+
+        <div class="col-md-10 col-md-offset-2" id="secondP">
+          <img src="images/moony5.jpg" alt="Un burger et des frites fraîches" class="thumbnail col-md-4">
+          <p class="col-md-8 panelText">
+            Au Moony on propose chaque jour de nouveaux plats frais (pièce du boucher, poisson frais, plats végés), des tapas et assiettes
+            du marché et on revisite les incontournables internationaux (burgers gourmets, wok végétariens, brunch, cafés
+            cocktails, cocktails new yorkais) avec des recettes 100% fait maison et des produits régionaux.
+          </p>
+        </div>
+
+        <div class="col-md-10" id="thirdP">
+          <P class="col-md-8 panelText">
+            Au soleil en terrasse place st michel, à l'ombre d'un parasol dans le patio privé, dans une ambiance « sports bar » retranscrite
+            par la diffusion des matchs en direct et une déco intégrant des équipements sportifs authentiques, le Moony une
+            brasserie nouvelle génération ouverte tous les jours, toute l’année (en service continu l'été) sur place, ou
+            à emporter.
+          </P>
+          <img src="images/moony6.jpg" alt="Dans le patio privé" class="thumbnail col-md-4">
+        </div>
+
+        <div class="col-md-10 col-md-offset-2" id="fourthP">
+          <img src="images/moony7.jpg" alt="Un burger et des frites fraîches" class="thumbnail col-md-4">
+          <p class="col-md-8 panelText">
+            Le Moony a le plaisir d’accueillir des clients dynamiques, sportifs, voyageurs, au sein de son restaurant. Il est également
+            possible d'organiser des événements pour les groupes, adaptés aux associations sportives, comités d'entreprises
+            ou à quiconque souhaitant célébrer un anniversaire ou tout autre moment de vie dans un espace agréable où règne
+            chaleur et convivialité.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <script src="js/acceuil.js"></script>
 </body>
 
 </html>
-
-<!-- <iframe src="https://player.vimeo.com/video/135651630?autoplay=1&color=64fad2&title=0&byline=0&portrait=0" width="640" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/135651630">Moony</a> from <a href="https://vimeo.com/eyebeamvideos">eyebeam videos</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->

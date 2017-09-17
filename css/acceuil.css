@@ -1,9 +1,13 @@
 body {
-    background-color: black;
+    /* background-color: black; */
+    margin: 0 auto;
+    background-image: url('../images/moony4.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .nav {
-    height: 300px;
+    height: 250px;
 }
 
 .navbar-brand {
@@ -20,16 +24,6 @@ body {
     z-index: 1;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .btn-group {
     position: absolute;
     top: 50px;
@@ -38,42 +32,127 @@ body {
 }
 
 #logo {
-    margin-top: 2%;
+    margin-top: 0.5%;
 }
+
 #video {
     height: 100%;
     width: 100%;
     margin-top: 2.5%;
 }
 
-@media only screen and (min-width: 768px) {
-    #leftControls {
-        position: absolute;
-        top: 190px;
-        left: 270px;
-        font-size: 1.5em;
-    }
-
-    #plats {
-        margin-left: 50px;
-    }
-
-    #rightControls {
-        position: absolute;
-        top: 190px;
-        left: 800px;
-        font-size: 1.5em;
-    }
+#panel {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(236, 180, 180, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#panelHeading {
+    padding-bottom: 0.3%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(89, 79, 69, 0.5);
+}
+
+#panelH2 {
+    font-size: 4em;
+    color: whitesmoke;
+    font-family: 'Lobster Two', cursive;
+}
+
+#panelBody {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(233, 243, 204, 0.3);
+    padding: 2% 2% 2% 2%;
+}
+
+.panelText {
+    font-size: 1.7em;
+    color: whitesmoke;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#firstP,
+#secondP,
+#thirdP,
+#fourthP {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: rgba(89, 79, 69, 0.5);
+    padding: 2% 2% 2% 2%;
+}
 
 @media only screen and (max-width: 768px) {
-    /* Styles pour écran large */
+    /* Styles pour smartphone */
     #logo {
         display: none;
     }
-
     .nav {
         height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1370px) {
+    .nav {
+        height: 120px;
+    }
+    #leftControls {
+        position: absolute;
+        top: 170px;
+        left: 250px;
+        font-size: 1.5em;
+    }
+    #plats {
+        margin-left: 50px;
+    }
+    #rightControls {
+        position: absolute;
+        top: 170px;
+        left: 800px;
+        font-size: 1.5em;
+    }
+    #engagements {
+        margin-right: auto;
+    }
+    #uberEats,
+    #deliveroo,
+    #foodora,
+    #moonyTake,
+    #facebook,
+    #tripAdvisor,
+    #instagram,
+    #googlePlus {
+        height: 100px;
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 1370px) {
+    #leftControls {
+        position: absolute;
+        top: 205px;
+        left: 280px;
+        font-size: 1.5em;
+    }
+    #plats {
+        margin-left: 60px;
+    }
+    #rightControls {
+        position: absolute;
+        top: 205px;
+        left: 950px;
+        font-size: 1.5em;
+    }
+    #engagements {
+        margin-right: 50px;
     }
 }

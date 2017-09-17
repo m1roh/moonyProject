@@ -1,24 +1,23 @@
-h2, p, h3 {
+h2,
+p,
+.h3Title {
     color: white;
 }
 
-.dishes{
+.dishes {
     z-index: 1;
 }
 
 h2 {
-
     padding: 1em 3em 0em 3em;
-
-
 }
 
-h3 {
+.h3Title {
     font-size: 28px;
 }
 
 p {
- font-size: 22px;
+    font-size: 22px;
 }
 
 body {
@@ -27,9 +26,7 @@ body {
     background-color: black;
 }
 
-
 .txt {
-
     text-align: center;
 }
 
@@ -46,25 +43,10 @@ body {
     min-height: 400px;
     border: 10px solid white;
     box-shadow: 10px 10px 10px #000000;
-
-
 }
 
 .imgA {
     display: block;
     margin-left: auto;
     margin-right: auto;
-/*
-    -ms-transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-*/
-}
-
-.imgB {
-    /*
-    -ms-transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
-    */
 }

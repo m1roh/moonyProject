@@ -1,30 +1,31 @@
-$(function() {
+$(function () {
 
     let elem = $('#video');
 
     if (elem.requestFullscreen) {
-      elem.requestFullscreen();
+        elem.requestFullscreen();
     } else if (elem.mozRequestFullScreen) {
-      elem.mozRequestFullScreen();
+        elem.mozRequestFullScreen();
     } else if (elem.webkitRequestFullscreen) {
-      elem.webkitRequestFullscreen();
+        elem.webkitRequestFullscreen();
     }
-    
+
 });
 
 function play() {
     $('section').hide();
-    $('#skip').click(function() {
+    $('#skip').click(function () {
         $('#video').hide();
+        $('body').css('paddingTop', '190px');
         $('.btn-group').hide();
         $('section').show();
     });
 
-    $('#sound').click(function() {
+    $('#sound').click(function () {
         $('#video').prop('muted', false);
     });
 
-    $('#mute').click(function() {
+    $('#mute').click(function () {
         $('#video').prop('muted', true);
     });
 }
