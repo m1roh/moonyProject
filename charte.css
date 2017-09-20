@@ -1,19 +1,25 @@
+.charte {
+    background: url("https://i.imgur.com/V28Vn5X.jpg");
+}
+
 .container {
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(49, 41, 38, 0.4);
     border: 5px solid #c30032;
     border-radius: 10px;
     margin-top: 100px;
+    height: 250px;
 }
 
 .rubrique {
     text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .engagement {
     color: white;
-}
-
-h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
     text-decoration: underline;
 }
 
@@ -21,24 +27,58 @@ pc1 {
     color: white;
     text-align: center;
     display: none;
+    font-family: 'Berkshire Swash', cursive;
+    border-color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
 }
 
 pc2 {
     color: white;
     text-align: center;
     display: none;
+    font-family: 'Berkshire Swash', cursive;
+    border-color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
 }
 
 pc3 {
     color: white;
     text-align: center;
     display: none;
+    font-family: 'Dosis', sans-serif;
+    border-color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
 }
 
 pc4 {
     color: white;
     text-align: center;
     display: none;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 6px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.stamps01 {
+    width: 105px;
+    height: 105px;
+}
+
+.stamps03 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px;
+}
+
+.stamps02 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px;
 }
 
 @media(max-width:767px) {
@@ -53,5 +93,8 @@ pc4 {
     }
     pc4 {
         display: none
+    }
+    .container{
+        height:350px;
     }
 }
