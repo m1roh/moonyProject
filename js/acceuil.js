@@ -9,6 +9,21 @@ $(function () {
     } else if (elem.webkitRequestFullscreen) {
         elem.webkitRequestFullscreen();
     }
+    
+    $("#myCarousel").on('slid.bs.carousel', function () {
+        $('.item p').animate({
+            opacity: 0
+        }, 3000);
+        $('div.active > img').fadeOut(3000);
+        
+    });
+
+    $("#myCarousel").on('slide.bs.carousel	', function () {
+        $('div.active > img').fadeIn(3000);
+        $('.item p').animate({
+            opacity: 1
+        }, 3000);
+    });
 });
 
 function play() {
