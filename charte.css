@@ -1,7 +1,3 @@
-.charte {
-    background: url("https://i.imgur.com/V28Vn5X.jpg");
-}
-
 .container {
     background-color: rgba(49, 41, 38, 0.4);
     border: 5px solid #c30032;
@@ -27,7 +23,7 @@ pc1 {
     color: white;
     text-align: center;
     display: none;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Dosis', sans-serif;
     border-color: white;
     border-radius: 12px;
     border: 2px solid white;
@@ -38,7 +34,7 @@ pc2 {
     color: white;
     text-align: center;
     display: none;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Dosis', sans-serif;
     border-color: white;
     border-radius: 12px;
     border: 2px solid white;
@@ -94,7 +90,7 @@ pc4 {
     pc4 {
         display: none
     }
-    .container{
-        height:350px;
+    .container {
+        height: 350px;
     }
 }
