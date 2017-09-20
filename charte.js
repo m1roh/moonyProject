@@ -1,12 +1,16 @@
-$("#image1").hover(function() {
-    $("#image .p1").toggle()
-    
-  });
+$(".stamps01").hover(function () {
+  $("pc1").slideToggle("slow")
 
-  $().hover(function() {
-    $(".p1").toggle();
-   })
+})
+$(".stamps02").hover(function () {
+  $("pc2").slideToggle("slow")
 
-  $("#acrobalance img ").hover(function() {
-   $("#acrobalance .p").toggle();
+})
+$(".stamps03").hover(function () {
+  $("pc3").slideToggle("slow")
+
+})
+$(".stamps04").hover(function () {
+  $("pc4").slideToggle("slow")
+
 })
