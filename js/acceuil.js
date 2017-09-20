@@ -9,15 +9,19 @@ $(function () {
     } else if (elem.webkitRequestFullscreen) {
         elem.webkitRequestFullscreen();
     }
-
 });
 
 function play() {
     $('section').hide();
     $('#skip').click(function () {
-        $('#video').hide();
-        $('body').css('paddingTop', '190px');
+        $('#video').hide();    
         $('.btn-group').hide();
+        if($(window).width() > 768) {
+            $('body').css('paddingTop', '190px');
+        } 
+        if($(window).width() <= 768) {
+            $('body').css('paddingTop', '50px'); 
+        }
         $('section').show();
     });
 
