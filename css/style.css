@@ -1,15 +1,294 @@
 body {
-background-image: url('bordeaux.jpg');
+    margin: 0 auto;
+    background-image: url('../images/bordeaux.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;    
+}
 
-background-size: cover;
+.navHome {
+    height: 140px;
+}
 
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.navbar-toggle {
+    z-index: 1;
+}
+
+.btn-group {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 99 !important;
+}
+
+#logo {
+    margin-top: 0.5%;
+}
+
+#uberEats,
+#deliveroo,
+#foodora,
+#moonyTake,
+#facebook,
+#tripAdvisor,
+#instagram,
+#googlePlus {
+    height: 100px;
+    width: 110px;
+}
+
+#facebook {
+    margin-top: 30%;
+}
+
+#video {
+    height: 100%;
+    width: 100%;
+    margin-top: 2.5%;
+}
+
+#panel {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(236, 180, 180, 0.48), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#panelHeading {
+    padding-bottom: 0.3%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    width: 35%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(89, 79, 69, 0.5);
+}
+
+#panelH2 {
+    font-size: 4em;
+    color: whitesmoke;
+    font-family: 'Lobster Two', cursive;
+}
+
+#panelBody {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(233, 243, 204, 0.3);
+    padding: 2% 2% 2% 2%;
+}
+
+.panelText {
+    font-size: 1.7em;
+    color: whitesmoke;
+}
+
+#firstP,
+#secondP,
+#thirdP,
+#fourthP {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2% 2% 2% 2%;
+}
+
+#homePanelImg1 {
+    margin-top: 7.5%;
+}
+
+#homePanelImg2 {
+    margin-top: 12%;
+}
+
+#homePanelImg3,
+#homePanelImg4 {
+    margin-top: 4%;
 }
 
 .titresection {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Lobster Two', cursive;
-   
+}
+
+#dishes:before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("images/biarritz8.jpg");
+    background-size: cover;
+    filter: blur(2px);
+}
+
+#dishes>h2 {
+    color: black;
+    padding-left: 5em;
+}
+
+.txt {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #000000;
+    margin-bottom: 1em;
+}
+
+.txt>h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 1px 1px grey;
+}
+
+.txt>p {
+    font-size: 22px;
+}
+
+.txt:hover {
+    box-shadow: 3px 3px 10px brown;
+    transform: translateY(-10px);
+}
+
+.top {
+    margin-top: 20em;
+}
+
+.top:hover {
+    transform: translateY(10px);
+    box-shadow: 0 -3px 10px brown;
+}
+
+.col-md-4>.thumbnail {
+    max-width: 100%;
+    min-height: 400px;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.col-md-4>.thumbnail:hover {
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.imgA {
+    margin-top: 2em;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.imgB {
+    margin-top: 2em;
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+#responsiveDishes {
+    display: none;
+}
+
+.charteContainer {
+    background-color: rgba(49, 41, 38, 0.4);
+    border: 5px solid #c30032;
+    border-radius: 10px;
+    margin-top: 100px;
+    height: 275px;
+}
+
+.rubrique {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.engagement {
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.c1 {
+    color: white;
+    text-align: center;
+    display: none;
+    font-family: 'Dosis', sans-serif;
+    border-color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
+}
+
+.c2 {
+    color: white;
+    text-align: center;
+    display: none;
+    font-family: 'Dosis', sans-serif;
+    border-color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
+}
+
+.c3 {
+    color: white;
+    text-align: center;
+    display: none;
+    font-family: 'Dosis', sans-serif;
+    border-color: white;
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
+}
+
+.c4 {
+    color: white;
+    text-align: center;
+    display: none;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 6px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.stamps01 {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 10px;
+}
+
+.stamps03 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px;
+    margin-bottom: 10px;
+}
+
+.stamps02 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px;
+    margin-bottom: 10px;
+}
+
+.stamps04 {
+    width: 120px;
+    height: 120px;
 }
 
 #contact {
@@ -18,14 +297,13 @@ background-size: cover;
     justify-content: center;
 }
 
-ul {
+.ulNav {
     display: flex;
     justify-content: center;
 }
 
-
-.navbar {
-    background-color: rgba(255,255,255,0.7);
+.contactNav {
+    background-color: rgba(255, 255, 255, 0.7);
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;

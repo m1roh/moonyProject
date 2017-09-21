@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) and (max-width: 1370px) {
+    .nav {
+        height: 120px;
+    }
+    #leftControls {
+        position: absolute;
+        top: 170px;
+        left: 250px;
+        font-size: 1.5em;
+    }
+    #plats {
+        margin-left: 50px;
+    }
+    #rightControls {
+        position: absolute;
+        top: 170px;
+        left: 800px;
+        font-size: 1.5em;
+    }
+    #engagements {
+        margin-right: auto;
+    }
+    #firstP,
+    #secondP,
+    #thirdP,
+    #fourthP {
+        background-color: rgba(89, 79, 69, 0.5);
+    }
+    #homeSlider {
+        display: none;
+    }
+}

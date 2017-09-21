@@ -1,0 +1,29 @@
+@media screen and (min-width: 1370px) {
+    #leftControls {
+        position: absolute;
+        top: 205px;
+        left: 280px;
+        font-size: 1.5em;
+    }
+    #plats {
+        margin-left: 60px;
+    }
+    #rightControls {
+        position: absolute;
+        top: 205px;
+        left: 950px;
+        font-size: 1.5em;
+    }
+    #engagements {
+        margin-right: 50px;
+    }
+    #firstP,
+    #secondP,
+    #thirdP,
+    #fourthP {
+        background-color: rgba(89, 79, 69, 0.5);
+    }
+    #homeSlider {
+        display: none;
+    }
+}

@@ -10,10 +10,6 @@
     filter: blur(2px);
 }
 
-body {
-    font-family: 'Dosis', sans-serif;
-}
-
 #dishes > h2 {
     color: black;
     padding-left: 5em;
@@ -82,63 +78,4 @@ body {
 
 #responsiveDishes {
     display: none;
-}
-
-@media all and (max-width: 1024px) {
-    .carousel {
-        display: none;
-    }
-
-    #responsiveDishes {
-        display: flex;
-        flex-direction: column;
-        margin-left: -2em;
-        margin-right: -2em;
-
-    }
-
-    .mobileRow {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-    }
-
-    .mobileRow > .thumbnail {
-        max-width: 49%;
-        margin: 1px;
-
-    }
-
-    .thumbnail > .btn {
-        width: 100%;
-        margin-top: 0.1em;
-        font-size: 50px;
-        font-weight: bolder;
-        border-radius: 2px;
-        overflow: hidden;
-    }
-
-    .modal-content {
-        text-align: center;
-        padding: 5em 1.5em 5em 1.5em;
-        border-radius: 50px;
-    }
-
-    .modal-dialog {
-        top: 15%;
-        width: 90%;
-    }
-
-    .modal-content > h3 {
-        font-size: 5em;
-        color: orange;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        font-weight: bold;
-    }
-
-    .modal-content > p {
-        font-size: 3em;
-    }
-
 }
