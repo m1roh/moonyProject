@@ -29,7 +29,10 @@ body {
 }
 
 .txt > h3 {
-    font-size: 28px;
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 1px 1px grey;
 }
 
 .txt > p {
@@ -46,11 +49,11 @@ body {
 }
 
 .top:hover {
-    transform: translateY(20px);
+    transform: translateY(10px);
     box-shadow: 0 -3px 10px brown;
 }
 
-.thumbnail {
+.col-md-4 > .thumbnail {
     max-width: 100%;
     min-height: 400px;
     box-shadow: 1px 1px 10px #000000;
@@ -94,29 +97,25 @@ body {
 
     }
 
-    .row {
+    .mobileRow {
         display: flex;
         justify-content: space-between;
         margin: 10px;
     }
 
-    .thumbnail {
+    .mobileRow > .thumbnail {
         max-width: 49%;
         margin: 1px;
 
     }
 
     .thumbnail > .btn {
-
-        min-width: 150px;
-        margin-top: 0.2em;
+        width: 100%;
+        margin-top: 0.1em;
         font-size: 50px;
         font-weight: bolder;
-        border-radius: 15px;
-    }
-
-    .thumbnail > img {
-        height: 400px;
+        border-radius: 2px;
+        overflow: hidden;
     }
 
     .modal-content {
@@ -126,13 +125,16 @@ body {
     }
 
     .modal-dialog {
-        top: 50%;
+        top: 15%;
+        width: 90%;
     }
 
     .modal-content > h3 {
         font-size: 5em;
         color: orange;
-        padding-bottom: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-weight: bold;
     }
 
     .modal-content > p {
