@@ -1,0 +1,142 @@
+#dishes:before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("images/biarritz8.jpg");
+    background-size: cover;
+    filter: blur(2px);
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+#dishes > h2 {
+    color: black;
+    padding-left: 5em;
+}
+
+.txt {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #000000;
+    margin-bottom: 1em;
+
+}
+
+.txt > h3 {
+    font-size: 28px;
+}
+
+.txt > p {
+    font-size: 22px;
+}
+
+.txt:hover {
+    box-shadow: 3px 3px 10px brown;
+    transform: translateY(-10px);
+}
+
+.top {
+    margin-top: 20em;
+}
+
+.top:hover {
+    transform: translateY(20px);
+    box-shadow: 0 -3px 10px brown;
+}
+
+.thumbnail {
+    max-width: 100%;
+    min-height: 400px;
+    box-shadow: 1px 1px 10px #000000;
+}
+
+.col-md-4 > .thumbnail:hover {
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.imgA {
+    margin-top: 2em;
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+
+}
+
+.imgB {
+    margin-top: 2em;
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+#responsiveDishes {
+    display: none;
+}
+
+@media all and (max-width: 1024px) {
+    .carousel {
+        display: none;
+    }
+
+    #responsiveDishes {
+        display: flex;
+        flex-direction: column;
+        margin-left: -2em;
+        margin-right: -2em;
+
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .thumbnail {
+        max-width: 49%;
+        margin: 1px;
+
+    }
+
+    .thumbnail > .btn {
+
+        min-width: 150px;
+        margin-top: 0.2em;
+        font-size: 50px;
+        font-weight: bolder;
+        border-radius: 15px;
+    }
+
+    .thumbnail > img {
+        height: 400px;
+    }
+
+    .modal-content {
+        text-align: center;
+        padding: 5em 1.5em 5em 1.5em;
+        border-radius: 50px;
+    }
+
+    .modal-dialog {
+        top: 50%;
+    }
+
+    .modal-content > h3 {
+        font-size: 5em;
+        color: orange;
+        padding-bottom: 1em;
+    }
+
+    .modal-content > p {
+        font-size: 3em;
+    }
+
+}
