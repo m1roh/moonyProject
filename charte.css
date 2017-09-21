@@ -85,16 +85,16 @@
 }
 
 @media(max-width:767px) {
-    pc1 {
+    .c1 {
         display: none
     }
-    pc2 {
+    .c2 {
         display: none
     }
-    pc3 {
+    .c3 {
         display: none
     }
-    pc4 {
+    .c4 {
         display: none
     }
     .container {
