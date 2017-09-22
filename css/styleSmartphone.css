@@ -142,13 +142,13 @@
         width: 90%;
     }
     .modal-content>h3 {
-        font-size: 5em;
+        font-size: 1.5em;
         color: orange;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         font-weight: bold;
     }
     .modal-content>p {
-        font-size: 3em;
+        font-size: 1.3em;
     }
 }

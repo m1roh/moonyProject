@@ -10,6 +10,10 @@ body {
     height: 140px;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -72,9 +76,20 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgba(89, 79, 69, 0.5);
+    text-align: center;
 }
 
-#panelH2 {
+#titleD, .engagement  {
+    padding-bottom: 0.3%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(89, 79, 69, 0.5); 
+}
+
+#panelH2, #dishesTitle, #engageTitle {
     font-size: 4em;
     color: whitesmoke;
     font-family: 'Lobster Two', cursive;
@@ -124,14 +139,16 @@ body {
     font-family: 'Lobster Two', cursive;
 }
 
-#dishes:before {
+.carousel-inner {
+    max-height: 50% !important;
+}
+/* #dishes:before {
     z-index: -1;
     content: '';
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
-    background-image: url("images/biarritz8.jpg");
     background-size: cover;
     filter: blur(2px);
 }
@@ -139,7 +156,7 @@ body {
 #dishes>h2 {
     color: black;
     padding-left: 5em;
-}
+} */
 
 .txt {
     text-align: center;
@@ -150,14 +167,14 @@ body {
 }
 
 .txt>h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     color: orange;
     text-shadow: 1px 1px grey;
 }
 
 .txt>p {
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .txt:hover {
@@ -165,8 +182,13 @@ body {
     transform: translateY(-10px);
 }
 
+.txt {
+    width: 30%;
+    margin: 1em;
+}
+
 .top {
-    margin-top: 20em;
+    margin-top: 10em;
 }
 
 .top:hover {
@@ -175,9 +197,11 @@ body {
 }
 
 .col-md-4>.thumbnail {
-    max-width: 100%;
-    min-height: 400px;
+    max-width: 70%;
+    max-height: 400px;
     box-shadow: 1px 1px 10px #000000;
+    margin: 15% 0 0 15%;
+    padding: auto;
 }
 
 .col-md-4>.thumbnail:hover {
@@ -187,14 +211,12 @@ body {
 }
 
 .imgA {
-    margin-top: 2em;
     -ms-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
 }
 
 .imgB {
-    margin-top: 2em;
     -ms-transform: rotate(2deg);
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
@@ -218,12 +240,12 @@ body {
     margin-top: 10px;
 }
 
-.engagement {
+/* .engagement {
     color: white;
     font-family: 'Lobster Two', cursive;
     font-size: 50px;
     text-decoration: underline;
-}
+} */
 
 .c1 {
     color: white;
