@@ -3,7 +3,7 @@
     #logo {
         display: none;
     }
-    .nav {
+    .navHome {
         height: 100%;
     }
     .navbar-nav .open .dropdown-menu {
@@ -14,7 +14,6 @@
     #deliveroo,
     #foodora,
     #moonyTake,
-    #tripAdvisor,
     #instagram,
     #googlePlus {
         position: absolute;
@@ -41,6 +40,10 @@
         top: -115px;
     }
     #tripAdvisor {
+        position: absolute;
+        height: 50px;
+        width: 65px;
+        left: 16px;
         top: -9px;
         left: 17px;
     }
@@ -99,10 +102,25 @@
     .c4 {
         display: none
     }
-    .charteContainer {
-        height: 350px;
+    #panelHeading,
+    #cTitle,
+    .engagement {
+        width: 80%;
+        font-size: 1em;
     }
-    
+    #panelH2,
+    #dishesTitle,
+    #engageTitle,
+    #contactTitle {
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    form {
+        font-family: 'Lobster Two', cursive;
+        font-size: 1em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -127,14 +145,17 @@
     .thumbnail>.btn {
         width: 100%;
         margin-top: 0.1em;
-        font-size: 1.8em;
+        font-size: 1.3em;
         font-weight: bolder;
         border-radius: 2px;
         overflow: hidden;
     }
+    .modal-content>img {
+        width: 90%;
+    }
     .modal-content {
         text-align: center;
-        padding: 5em 1.5em 5em 1.5em;
+        padding: 3em 1.5em 3em 1.5em;
         border-radius: 50px;
     }
     .modal-dialog {
@@ -142,13 +163,13 @@
         width: 90%;
     }
     .modal-content>h3 {
-        font-size: 5em;
+        font-size: 1.2em;
         color: orange;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         font-weight: bold;
     }
     .modal-content>p {
-        font-size: 3em;
+        font-size: 1em;
     }
 }
