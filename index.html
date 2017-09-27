@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Lobster+Two" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleSmartphone.css">
+  <link rel="stylesheet" href="css/styleMiniPc.css">
+  <link rel="stylesheet" href="css/styleLaptop.css">
+  <title>Moony</title>
+</head>
+
+<body onload="play()">
+  <video src="images/Moony .mp4" autoplay muted id="video"></video>
+  <div class="btn-group">
+    <button class="btn btn-danger" id="skip">Skip this video</button>
+    <button class="btn btn-warning" id="sound"><span class="glyphicon glyphicon-volume-up"></span></button>
+    <button class="btn btn-info" id="mute"><span class="glyphicon glyphicon-volume-off"></span></button>
+  </div>
+
+
+
+  <section id="content" class="container">
+    <div id="accueil" class="row">
+      <nav class="navbar navbar-inverse navbar-top navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+        </div>
+        <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" class="col-lg-10 col-lg-offset-1"/></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-left navHome">
+            <li><a href="https://www.ubereats.com/fr-CA/bordeaux/food-delivery/moony/XNerCitdQvG2BCslz8W9Qw/"><img src="images/uberEatsLogo.png" alt="Uber Eats" class="col-xs-2 col-lg-2" id="uberEats"></a></li>
+            <li><a href="https://deliveroo.fr/fr/menu/bordeaux/bordeaux-saint-genes-victoire/moony"><img src="images/deliveroo.png" alt="Deliveroo" class="col-xs-2 col-lg-2" id="deliveroo"></a></li>
+            <li><a href="https://www.foodora.fr/restaurant/s7ub/moony"><img src="images/foodora.png" alt="Foodora" class="col-xs-2 col-lg-2" id="foodora"></a></li>
+            <li><a href="#contact"><img src="images/moonyTake.png" alt="Moony Take Away" class="col-xs-2 col-lg-2" id="moonyTake"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navHome" id="social">
+            <li>
+              <iframe class="col-xs-2 col-lg-2" id="facebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FMOONY-214864855239151%2F&width=150&layout=box_count&action=like&size=large&show_faces=true&share=false&height=65&appId"
+                width="110" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </li>
+            <li><a href="https://www.tripadvisor.fr/Restaurant_Review-g187079-d10284682-Reviews-Moony-Bordeaux_Gironde_Nouvelle_Aquitaine.html"><img src="images/tripadvisor2.gif" alt="Trip Advisor" class="col-xs-2 col-lg-2" id="tripAdvisor"></a></li>
+            <li><a href="https://www.instagram.com/moonyburger/"><img src="images/insta.png" alt="Instagram" class="col-xs-2 col-lg-2" id="instagram"></a></li>
+            <li><a href="https://plus.google.com/u/0/117767551774553180084"><img src="images/googlePlus.png" alt="Google +" class="col-xs-2 col-lg-2" id="googlePlus"></a></li>
+          </ul>
+          <ul class="nav navbar-nav navHome" id="leftControls">
+            <li><a href="#" id="concept">Concept</a></li>
+            <li class="dropdown" id="plats">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plats<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#dishes" data-slide-to="2" id="entrees">Entrées</a></li>
+                <li><a href="#dishes" data-slide-to="0">Plats</a></li>
+                <li><a href="#dishes" data-slide-to="3">Desserts</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navHome" id="rightControls">
+            <li id="engagements"><a href="#charte">Nos engagements</a></li>
+            <li><a href="#contact">Nous trouver</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+
+      <div class="col-xs-12 col-md-10 col-md-offset-1" id="panel">
+        <div id="panelHeading" class="text-center">
+          <h2 id="panelH2">Notre Concept</h2>
+        </div>
+        <div class="text-justify row" id="panelBody">
+          <div class="col-md-10 col-xs-12" id="firstP">
+            <p class="col-md-8 col-xs-12 panelText" id="firstPText">Moony c'est l'aventure de 2 gourmands: un frère passionné depuis toujours par la cuisine de son sud-ouest natal...
+              et une soeur qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays. En alliant leurs expériences
+              culinaires et internationales ils donnent naissance à un concept unique.
+            </p>
+            <img id="homePanelImg1" src="images/moony.jpg" alt="Le Restaurant et l'équipe" class="thumbnail col-md-4">
+          </div>
+
+          <div class="col-md-10 col-md-offset-2 col-xs-12" id="secondP">
+            <img id="homePanelImg2" src="images/moony5.jpg" alt="Un burger et des frites fraîches" class="thumbnail col-md-4">
+            <p class="col-md-8 col-xs-12 panelText">
+              Au Moony on propose chaque jour de nouveaux plats frais (pièce du boucher, poisson frais, plats végés), des tapas et assiettes
+              du marché et on revisite les incontournables internationaux (burgers gourmets, wok végétariens, brunch, cafés
+              cocktails, cocktails new yorkais) avec des recettes 100% fait maison et des produits régionaux.
+            </p>
+          </div>
+
+          <div class="col-md-10 col-xs-12" id="thirdP">
+            <P class="col-md-8 col-xs-12 panelText">
+              Au soleil en terrasse place st michel, à l'ombre d'un parasol dans le patio privé, dans une ambiance « sports bar » retranscrite
+              par la diffusion des matchs en direct et une déco intégrant des équipements sportifs authentiques, le Moony
+              une brasserie nouvelle génération ouverte tous les jours, toute l’année (en service continu l'été) sur place,
+              ou à emporter.
+            </P>
+            <img id="homePanelImg3" src="images/moony6.jpg" alt="Dans le patio privé" class="thumbnail col-md-4">
+          </div>
+
+          <div class="col-md-10 col-md-offset-2 col-xs-12" id="fourthP">
+            <img id="homePanelImg4" src="images/moony7.jpg" alt="Un burger et des frites fraîches" class="thumbnail col-md-4">
+            <p class="col-md-8 col-xs-12 panelText">
+              Le Moony a le plaisir d’accueillir des clients dynamiques, sportifs, voyageurs, au sein de son restaurant. Il est également
+              possible d'organiser des événements pour les groupes, adaptés aux associations sportives, comités d'entreprises
+              ou à quiconque souhaitant célébrer un anniversaire ou tout autre moment de vie dans un espace agréable où règne
+              chaleur et convivialité.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="homeSlider">
+        <div id="panelHeading" class="text-center">
+          <h2 id="panelH2">Notre Concept</h2>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/moony.jpg" alt="L'équipe devant le restaurant">
+              <div class="carousel-caption">
+                <p class="sliderText">Moony c'est l'aventure de 2 gourmands: un frère passionné depuis toujours par la cuisine de son sud-ouest
+                  natal... et une soeur qui a parcouru le monde pour goûter aux différentes saveurs de 60 pays. En alliant
+                  leurs expériences culinaires et internationales ils donnent naissance à un concept unique.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/moony5.jpg" id="photoBurger" alt="Un moony burger">
+              <div class="carousel-caption">
+                <p class="sliderText mid">
+                  Au Moony on propose chaque jour de nouveaux plats frais (pièce du boucher, poisson frais, plats végés), des tapas et assiettes
+                  du marché et on revisite les incontournables internationaux (burgers gourmets, wok végétariens, brunch,
+                  cafés cocktails, cocktails new yorkais) avec des recettes 100% fait maison et des produits régionaux.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/moony6.jpg" alt="Le patio intérieur">
+              <div class="carousel-caption">
+                <P class="sliderText long">
+                  Au soleil en terrasse place st michel, à l'ombre d'un parasol dans le patio privé, dans une ambiance « sports bar » retranscrite
+                  par la diffusion des matchs en direct et une déco intégrant des équipements sportifs authentiques, le Moony
+                  une brasserie nouvelle génération ouverte tous les jours, toute l’année (en service continu l'été) sur
+                  place, ou à emporter.
+                </P>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/moony7.jpg" alt="Une cliente">
+              <div class="carousel-caption">
+                <p class="sliderText long">
+                  Le Moony a le plaisir d’accueillir des clients dynamiques, sportifs, voyageurs, au sein de son restaurant. Il est également
+                  possible d'organiser des événements pour les groupes, adaptés aux associations sportives, comités d'entreprises
+                  ou à quiconque souhaitant célébrer un anniversaire ou tout autre moment de vie dans un espace agréable
+                  où règne chaleur et convivialité.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="dishes" class="row">
+      <div id="titleD" class="text-center">
+        <h2 id="dishesTitle">Plats</h2>
+      </div>
+      <div id="car">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner container" role="listbox">
+            <div class="item active" id="slideBurgers">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food1.jpg" class="thumbnail imgA" alt="dish1">
+                </div>
+                <div class="col-md-4 col-sm-4 txt top">
+                  <h3>P'tit Luxe</h3>
+                  <p>Boeuf, Foie-gras, tomate, salade, oignon</p>
+                  <p>Beef, foie gras,tomato, salad, onion</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food2.jpg" class="thumbnail imgB" alt="dish2">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Moony classic</h3>
+                  <p>Boeuf, cheddar, tomate, salade, oignon</p>
+                  <p>Beef, cheese,tomato, salad, onion</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food3.jpg" class="thumbnail" alt="dish3">
+                </div>
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Ocean burger</h3>
+                  <p>Saumon, concombre, avocat, salade, oignon</p>
+                  <p>Salmon, cucumber, avocado, salad, onion</p>
+                </div>
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food4.jpg" class="thumbnail imgA" alt="dish4">
+                </div>
+                <div class="col-md-4 col-sm-4 txt top">
+                  <h3>Wrap Chica chic</h3>
+                  <p>Poulet, brebis, oignon, poivrons, salade</p>
+                  <p>Chicken, cheese, onion, pepper, salad</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food5.jpg" class="thumbnail imgB" alt="dish5">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Challenger</h3>
+                  <p>Quatre étages de boeuf & cheddar, bacon, rôti de pommes de terre, tomate, salade, oignon</p>
+                  <p>Four layers of beef & cheese, bacon, hash brown, tomato, salad, onion</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food6.jpg" class="thumbnail" alt="dish6">
+                </div>
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Authentique</h3>
+                  <p>Boeuf, chèvre, tomate, salade, oignons</p>
+                  <p>Beef, goat cheese, tomato, salad, onion</p>
+                </div>
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+
+            <div class="item" id="slideStarters">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food7.jpg" class="thumbnail imgA" alt="dish7">
+                </div>
+                <div class="col-md-4 col-sm-4 txt top">
+                  <h3>Assiette des copains</h3>
+                  <p>Calamars fris, charcuterie, fromage</p>
+                  <p>Squids fry, cold meats, cheese</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food9.jpg" class="thumbnail imgB" alt="dish9">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Pintxos</h3>
+                  <p>Tapas authentiques selon les saisons</p>
+                  <p>Authentic tapas according to the seasons</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food8.jpg" class="thumbnail" alt="dish8">
+                </div>
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Salade du pays</h3>
+                  <p>Jambon de pays, mozarella, tomate, oignon</p>
+                  <p>Mixed salad of ham, tomato, mozarella, onion</p>
+                </div>
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item" id="SlideDessert">
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food13.jpg" class="thumbnail imgA" alt="dish10">
+                </div>
+                <div class="col-md-4 col-sm-4 txt top">
+                  <h3>Sundae choco</h3>
+                  <p>Glace vanille, coulis et Smarties</p>
+                  <p>Vanilla ice cream with Smarties</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food11.jpg" class="thumbnail imgB" alt="dish11">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Capucino crunch</h3>
+                  <p>Capuccino et cookies</p>
+                  <p>Capuccino and cookies</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food12.jpg" class="thumbnail" alt="dish12">
+                </div>
+                <div class="col-md-4 col-sm-4 txt bottom">
+                  <h3>Chocolat Viennois</h3>
+                  <p>Chocolat au lait, chantilly, morceaux de chocolat</p>
+                  <p>Milk chocolate, whipped cream, pieces of chocolate</p>
+                </div>
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item">
+              <div class="row">
+                <div class="col-md-offset-2 col-md-4 col-sm-4">
+                  <img src="images/food14.jpg" class="thumbnail imgA" alt="dish14">
+                </div>
+                <div class="col-md-4 col-sm-4 txt top">
+                  <h3>Cheesecake aux fruits rouges</h3>
+                  <p>Speculos et fruits rouges</p>
+                  <p>Speculos Cheesecake with red berries</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-offset-2 col-md-4 col-sm-4 txt bottom">
+                  <h3>Crumble tatin</h3>
+                  <p>crumble aux pommes façon tarte tatin</p>
+                  <p>Apple crumble like Tatin pie</p>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <img src="images/food15.jpg" class="thumbnail" alt="dish15">
+                </div>
+                <div class="carousel-caption">
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Version mobile -->
+      <div id="responsiveDishes">
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food1.jpg" alt="dish1" data-toggle="modal" data-target=".dish1">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish1">
+                        Moony classic
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food1.jpg" alt="dish1">
+                  <h3>Moony classic</h3>
+                  <p>Boeuf, cheddar, tomate, salade, oignon</p>
+                  <p>Beef, cheese,tomato, salad, onion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food2.jpg" alt="dish2" data-toggle="modal" data-target=".dish2">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish2">
+                        Ocean burger
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food2.jpg" alt="dish2">
+                  <h3>Ocean burger</h3>
+                  <p>Saumon, concombre, avocat, salade, oignon</p>
+                  <p>Salmon, cucumber, avocado, salad, onion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food3.jpg" alt="dish3" data-toggle="modal" data-target=".dish3">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish3">
+                        P'tit Luxe
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food3.jpg" alt="dish3">
+                  <h3>P'tit Luxe</h3>
+                  <p>Boeuf, foie-gras maison, tomate, salad, oignon</p>
+                  <p>Beef, home-made foie gras,tomato, salad, onion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food4.jpg" alt="dish4" data-toggle="modal" data-target=".dish4">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish4">
+                        Challenger
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food4.jpg" alt="dish4">
+                  <h3>Challenger</h3>
+                  <p>Quatre étages de boeuf & cheddar, bacon, rôti de pommes de terre, tomate, salade, oignon
+                  </p>
+                  <p>Four layers of beef & cheese, bacon, hash brown, tomato, salad, onion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food5.jpg" alt="dish5" data-toggle="modal" data-target=".dish5">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish5">
+                        Authentique
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food5.jpg" alt="dish5">
+                  <h3>Authentique</h3>
+                  <p>Boeuf, chèvre, tomate, salade, oignon</p>
+                  <p>Beef, goat cheese, tomato, salad, onion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food6.jpg" alt="dish6" data-toggle="modal" data-target=".dish6">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish6">
+                        Wrap Chica chic
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food6.jpg" alt="dish6">
+                  <h3>Wrap Chica chic</h3>
+                  <p>Poulet, brebis, oignon, poivrons, salade</p>
+                  <p>Chicken, cheese, onion, pepper, salad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food7.jpg" alt="dish7" data-toggle="modal" data-target=".dish7">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish7">
+                        Pintxos
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food7.jpg" alt="dish7">
+                  <h3>Pintxos</h3>
+                  <p>Tapas authentiques selon les saisons</p>
+                  <p>Authentic tapas according to the seasons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food8.jpg" alt="dish8" data-toggle="modal" data-target=".dish8">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish8">
+                        Assiette 'copains'
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food8.jpg" alt="dish8">
+                  <h3>Assiette des copains</h3>
+                  <p>Calamars fris, charcuterie, fromage</p>
+                  <p>Squids fry, cold meats, cheese</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food9.jpg" alt="dish9" data-toggle="modal" data-target=".dish9">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish9">
+                        Salade du pays
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food9.jpg" alt="dish9">
+                  <h3>Salade du pays</h3>
+                  <p>Jambon de pays, mozarella, tomate, oignon</p>
+                  <p>Mixed salad of ham, tomato, mozarella, onion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food13.jpg" alt="dish10" data-toggle="modal" data-target=".dish10">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish10">
+                        Capucino crunch
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food13.jpg" alt="dish10">
+                  <h3>Capucino crunch</h3>
+                  <p>Capuccino et cookies</p>
+                  <p>Capuccino and cookies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food11.jpg" alt="dish11" data-toggle="modal" data-target=".dish11">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish11">
+                        Chocolat Viennois
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food11.jpg" alt="dish11">
+                  <h3>Chocolat Viennois</h3>
+                  <p>Chocolat au lait, chantilly, morceaux de chocolat</p>
+                  <p>Milk chocolate, whipped cream, pieces of chocolate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food12.jpg" alt="dish12" data-toggle="modal" data-target=".dish12">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish12">
+                        Sundae choco
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food12.jpg" alt="dish12">
+                  <h3>Sundae choco</h3>
+                  <p>Glace vanille, coulis et bonbons au chocalat</p>
+                  <p>Vanilla ice cream with chocolate candies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mobileRow">
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food14.jpg" alt="dish14" data-toggle="modal" data-target=".dish13">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish13">
+                        Crumble tatin
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food14.jpg" alt="dish14">
+                  <h3>Crumble tatin</h3>
+                  <p>crumble aux pommes façon tarte tatin</p>
+                  <p>Apple crumble like Tatin pie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-5 thumbnail">
+            <img src="images/food15.jpg" alt="dish15" data-toggle="modal" data-target=".dish14">
+            <button type="button" class="btn btn-warning center-block" data-toggle="modal" data-target=".dish14">
+                        Cheesecake
+                    </button>
+            <div class="modal fade bs-example-modal-lg dish14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <img src="images/food15.jpg" alt="dish15">
+                  <h3>Cheesecake aux fruits rouges</h3>
+                  <p>Cheesecake au speculos et coulis de fruits rouges</p>
+                  <p>Speculos Cheesecake with coulis of red berries</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="charte" class="text-center" id="charte">
+      <div class="row">
+        <div class="engagement text-center">
+          <h2 id="engageTitle">Nos engagements</h2>
+        </div>
+      </div>
+
+      <div class="container charteContainer">
+
+
+        <div class="row">
+          <div class="rubrique">
+            <div class="col-xs-6 col-sm-6 col-md-3  image">
+              <img class="stamps01" src="https://i.imgur.com/BO2Q3Vt.png">
+              <p class="c1">Des produits frais sélectionner par nos producteurs depuis de nombreuses années.
+              </p>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3 image">
+              <img class="stamps02" src="https://i.imgur.com/EBPOcrH.png">
+              <p class="c2">Moony vous propose une sélection de plats frais à déguster sur place dans un espace convivial et sportif ou
+                en terrasse située sur la place saint Michel.</br>
+                Possibilité de prendre à emporter.
+              </p>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3 image">
+              <img class="stamps03" src="https://i.imgur.com/6xNuPnM.png">
+              <p class="c3">Chez Moony, absolument tout est fait maison. La réalisation de nos sauces, la préparation de nos frites maisons
+                ainsi que nos différents ingrédients sont préparés le matin même .
+              </p>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-3 image">
+              <img class="stamps04" src="https://i.imgur.com/8rIWJU9.png">
+              <p class="c4">Chez Moony, absolument tout est fait maison, de la réalisation des sauces à la préparation des frites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cTitle">
+      <h2 id="contactTitle">Contact</h2>
+    </div>
+    <div id="contact">
+      <div class="navbar contactNav">
+
+        <ul class="nav nav-tabs ulNav">
+          <li class="active" onclick="myFunction1()"><a data-toggle="tab" href="#bordeaux">Bordeaux</a></li>
+          <li onclick="myFunction2()"><a data-toggle="tab" href="#biarritz">Biarritz</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="bordeaux" class="tab-pane fade in active">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.3395698795774!2d-0.567203970786252!3d44.83463649869364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527cb8f9f0dd3%3A0x436287cdacb6f2bd!2sMoony!5e0!3m2!1sfr!2sfr!4v1505295556525"
+              width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="adresse">
+              <p>MOONY Café Restaurant Brasserie</p>
+              <p>Bordeaux Centre Place St Michel</p>
+              <p>28 Place Meynard, 33000 Bordeaux</p>
+              <p>Tel: 09 72 82 81 81</p>
+              <p>resto@moony64.com</p>
+            </div>
+          </div>
+          <div id="biarritz" class="tab-pane fade">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.96228866453!2d-1.5686532847024193!3d43.48225737912757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd516b2f7a3753f3%3A0xc16312733970622d!2sMoony%3A+The+Homemade+Burger+Factory!5e0!3m2!1sfr!2sfr!4v1505295691307"
+              width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="adresse">
+              <p>MOONY Café Restaurant Brasserie</p>
+              <p> 12 Rue du Port Vieux, 64200 Biarritz</p>
+              <p>Tel: 09 66 93 71 05</p>
+              <p>resto@moony64.com</p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="lastname">Nom :</label>
+            <input type="txt" class="form-control" id="lastname">
+          </div>
+          <div class="form-group">
+            <label for="firstname">Prénom: </label>
+            <input type="name" class="form-control" id="firstname">
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse mail: </label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="comment">Votre message :</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-default">Envoyer</button>
+        </form>
+
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
